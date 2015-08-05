@@ -1,0 +1,60 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="angular.js"></script>
+	<script type="text/javascript" src="myList.js"></script>
+	<script type="text/javascript" src="myDropDown.js"></script>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+<body onload="">
+
+<div ng-app="myApp">
+	<div ng-controller="myAppController">
+		<input type="button" ng-click="test()" value="TestButtons" />
+		
+		
+		<my-directive>
+			
+			<div transclude-to="firstDiv">
+				Content Inside firstDiv
+			</div>
+			<div transclude-to="secondDiv">
+				Content Inside secondDiv
+			</div>
+			<div transclude-to="thirdDiv">
+				Content Inside thirdDiv
+			</div>
+			
+
+		</my-directive>
+		<my-list 
+				items="areas.list"
+				selected = "areas.current"
+				transclude-to = "listDiv"></my-list>
+		<my-list 
+			items="apps.list"
+			selected = "apps.current"
+			transclude-to = "listDiv"></my-list>	
+
+		<my-dropdown>
+			<my-trigger>
+				<span ng-bind="apps.current" />
+			</my-trigger>
+			<my-target>
+				<my-list 
+					items="apps.list"
+					selected="apps.current"></my-list>
+			</my-target>
+			
+		</my-dropdown>
+
+			
+	</div>	
+</div>
+
+</body>
+</html> 

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ANgular GuestBook</title>
+
+</head>
+<body ng-app="ngTextField" height="100%">
+
+	
+	<div ng-include="'templates/navbar.html'"></div>
+
+
+	<div>
+		<div class="page-header">
+			<h2>Sample App For using AngularJS</h2>
+		</div>
+		<ul type="disc">
+			<li>Directives</li>
+			<li>Routes</li>
+			<li>Factories</li>
+		</ul>
+	</div>
+		
+
+	<div >
+		<a href="#/login"> Login </a> 
+		<a href="#/signup"> Sign Up </a>
+		<div ng-view></div>
+	</div>
+
+	
+	
+	
+	<div id="mainContainer" style="border-style: solid;border-width:2px;height:100%">
+		MainContainer
+		
+		
+		<div id="leftPanel" ng-include="templates/layout/leftPanel.html" style="width:25%;border-style: solid;border-width:2px;"></div>
+		<div id="contentPanel" ng-include="templates/layout/contentPanel.html" style="width:25%;border-style: solid;border-width:2px;"></div>
+		<div id="rightPanel" ng-include="templates/layout/rightPanel.html" style="width:25%;border-style: solid;border-width:2px;"></div>
+	</div>
+	
+	
+	
+	
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/angular-route.min.js"></script>
+	<script type="text/javascript" src="js/commonController.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
