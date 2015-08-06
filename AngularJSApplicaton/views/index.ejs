@@ -1,0 +1,21 @@
+<!doctype html>
+<html  ng-app="juniorAmazon">
+<head>
+  <meta charset="utf-8">
+  <title>Junior Amazon</title>
+  <script src="js/angular.min.js"></script>
+  <script src="user-js/controller.js"></script>
+</head>
+
+<body ng-controller="AppControllers">
+
+	<ul>
+		<li  ng-repeat="product in products">
+			{{product.name}} <br/>
+			{{product.category}} <br/>
+			{{product.price}} <br/><br/>
+		</li>
+	</ul>
+
+</body>
+</html>
