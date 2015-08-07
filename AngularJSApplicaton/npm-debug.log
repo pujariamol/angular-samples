@@ -1,0 +1,90 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose readDependencies loading dependencies from E:\Workspace\angular-samples\AngularJSApplicaton\package.json
+5 verbose install where, deps [ 'E:\\Workspace\\angular-samples\\AngularJSApplicaton',
+5 verbose install   [ 'express',
+5 verbose install     'ejs',
+5 verbose install     'angular-route',
+5 verbose install     'karma',
+5 verbose install     'karma-chrome-launcher',
+5 verbose install     'karma-firefox-launcher',
+5 verbose install     'karma-jasmine' ] ]
+6 verbose install where, peers [ 'E:\\Workspace\\angular-samples\\AngularJSApplicaton', [] ]
+7 verbose installManyTop reading for lifecycle E:\Workspace\angular-samples\AngularJSApplicaton\package.json
+8 info preinstall AngularJSSample@0.0.1
+9 verbose installManyTop reading scoped package data from E:\Workspace\angular-samples\AngularJSApplicaton\node_modules\ejs\package.json
+10 verbose installManyTop reading scoped package data from E:\Workspace\angular-samples\AngularJSApplicaton\node_modules\express\package.json
+11 verbose installManyTop reading scoped package data from E:\Workspace\angular-samples\AngularJSApplicaton\node_modules\karma\package.json
+12 verbose installManyTop reading scoped package data from E:\Workspace\angular-samples\AngularJSApplicaton\node_modules\karma-chrome-launcher\package.json
+13 verbose installManyTop reading scoped package data from E:\Workspace\angular-samples\AngularJSApplicaton\node_modules\karma-firefox-launcher\package.json
+14 verbose installManyTop reading scoped package data from E:\Workspace\angular-samples\AngularJSApplicaton\node_modules\karma-jasmine\package.json
+15 info package.json express@3.2.6 No license field.
+16 verbose readDependencies loading dependencies from E:\Workspace\angular-samples\AngularJSApplicaton\package.json
+17 verbose targetResolver reading package data from E:\Workspace\angular-samples\AngularJSApplicaton\node_modules\ejs\package.json
+18 verbose targetResolver reading package data from E:\Workspace\angular-samples\AngularJSApplicaton\node_modules\express\package.json
+19 verbose targetResolver reading package data from E:\Workspace\angular-samples\AngularJSApplicaton\node_modules\karma\package.json
+20 verbose targetResolver reading package data from E:\Workspace\angular-samples\AngularJSApplicaton\node_modules\karma-chrome-launcher\package.json
+21 verbose targetResolver reading package data from E:\Workspace\angular-samples\AngularJSApplicaton\node_modules\karma-firefox-launcher\package.json
+22 verbose targetResolver reading package data from E:\Workspace\angular-samples\AngularJSApplicaton\node_modules\karma-jasmine\package.json
+23 verbose targetResolver reading package data from E:\Workspace\angular-samples\AngularJSApplicaton\node_modules\.bin\express\package.json
+24 verbose targetResolver reading package data from E:\Workspace\angular-samples\AngularJSApplicaton\node_modules\.bin\express.cmd\package.json
+25 verbose targetResolver reading package data from E:\Workspace\angular-samples\AngularJSApplicaton\node_modules\.bin\karma\package.json
+26 verbose targetResolver reading package data from E:\Workspace\angular-samples\AngularJSApplicaton\node_modules\.bin\karma.cmd\package.json
+27 verbose already installed skipping karma@^0.12.16 E:\Workspace\angular-samples\AngularJSApplicaton
+28 verbose already installed skipping karma-chrome-launcher@^0.1.4 E:\Workspace\angular-samples\AngularJSApplicaton
+29 verbose already installed skipping karma-firefox-launcher@^0.1.3 E:\Workspace\angular-samples\AngularJSApplicaton
+30 verbose already installed skipping karma-jasmine@~0.1.0 E:\Workspace\angular-samples\AngularJSApplicaton
+31 verbose already installed skipping express@3.2.6 E:\Workspace\angular-samples\AngularJSApplicaton
+32 verbose already installed skipping ejs@* E:\Workspace\angular-samples\AngularJSApplicaton
+33 silly cache add args [ 'angular-route@~1.4.0', null ]
+34 verbose cache add spec angular-route@~1.4.0
+35 silly cache add parsed spec { raw: 'angular-route@~1.4.0',
+35 silly cache add   scope: null,
+35 silly cache add   name: 'angular-route',
+35 silly cache add   rawSpec: '~1.4.0',
+35 silly cache add   spec: '>=1.4.0 <1.5.0',
+35 silly cache add   type: 'range' }
+36 silly addNamed angular-route@>=1.4.0 <1.5.0
+37 verbose addNamed ">=1.4.0 <1.5.0" is a valid semver range for angular-route
+38 silly addNameRange { name: 'angular-route',
+38 silly addNameRange   range: '>=1.4.0 <1.5.0',
+38 silly addNameRange   hasData: false }
+39 silly mapToRegistry name angular-route
+40 silly mapToRegistry using default registry
+41 silly mapToRegistry registry https://registry.npmjs.org/
+42 silly mapToRegistry uri https://registry.npmjs.org/angular-route
+43 verbose addNameRange registry:https://registry.npmjs.org/angular-route not in flight; fetching
+44 verbose request uri https://registry.npmjs.org/angular-route
+45 verbose request no auth needed
+46 info attempt registry request try #1 at 4:52:32 PM
+47 verbose request id eae8531d8bfc494a
+48 http request GET https://registry.npmjs.org/angular-route
+49 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org
+50 info attempt registry request try #2 at 4:52:42 PM
+51 http request GET https://registry.npmjs.org/angular-route
+52 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org
+53 info attempt registry request try #3 at 4:53:42 PM
+54 http request GET https://registry.npmjs.org/angular-route
+55 verbose stack Error: getaddrinfo ENOTFOUND registry.npmjs.org
+55 verbose stack     at errnoException (dns.js:44:10)
+55 verbose stack     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:94:26)
+56 verbose cwd E:\Workspace\angular-samples\AngularJSApplicaton
+57 error Windows_NT 6.3.9600
+58 error argv "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+59 error node v0.12.7
+60 error npm  v2.11.3
+61 error code ENOTFOUND
+62 error errno ENOTFOUND
+63 error syscall getaddrinfo
+64 error network getaddrinfo ENOTFOUND registry.npmjs.org
+64 error network This is most likely not a problem with npm itself
+64 error network and is related to network connectivity.
+64 error network In most cases you are behind a proxy or have bad network settings.
+64 error network
+64 error network If you are behind a proxy, please make sure that the
+64 error network 'proxy' config is set properly.  See: 'npm help config'
+65 verbose exit [ 1, true ]

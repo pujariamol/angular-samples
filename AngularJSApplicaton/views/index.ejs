@@ -3,19 +3,54 @@
 <head>
   <meta charset="utf-8">
   <title>Junior Amazon</title>
+  
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script src="js/angular.min.js"></script>
   <script src="user-js/controller.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css"></link>
+  
+  
 </head>
 
 <body ng-controller="AppControllers">
 
-	<ul>
-		<li  ng-repeat="product in products">
-			{{product.name}} <br/>
-			{{product.category}} <br/>
-			{{product.price}} <br/><br/>
-		</li>
-	</ul>
+	<p>Total number of products in inventory : {{products.length}}</p>
+	
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="col-md-2">
+			  <!--Sidebar content-->
+			  Search: <input ng-model="query"><br/><br/>
+			  
+			 <!-- This is a good time to talk about two-way data-binding. Notice that when the app is loaded in the browser, "Newest" is selected in the drop down menu. This is because we set orderProp to 'age' in the controller. So the binding works in the direction from our model to the UI. Now if you select "Alphabetically" in the drop down menu, the model will be updated as well and the phones will be reordered. That is the data-binding doing its job in the opposite direction — from the UI to the model.--> 
+			  
+			  
+			  Sort by:
+				<select ng-model="orderProp">
+				  <option value="name">Alphabetical</option>
+				  <option value="age">Newest</option>
+				</select>
+			</div>
+
+			<div class="col-md-10">
+			  <!--Body content-->
+
+			  <ul class="products">
+				<li ng-repeat="product in products | filter:query | orderBy:orderProp" class="thumbnail" style="float:left;margin:4px;">
+				  <a href="#/products/{{product.id}}" class="thumb"> <img style="height:200px;width:160px;" ng-src="{{product.imgUrl}}"></a>
+				  <a href="#/products/{{product.id}}"> {{product.name}}</a>
+				  <p>{{product.category}}
+					{{product.price}}
+				  </p>
+				  
+				</li>
+			  </ul>
+			</div>
+		</div>
+	</div>
 
 </body>
 </html>

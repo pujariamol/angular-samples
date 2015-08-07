@@ -8,6 +8,7 @@
   "dependencies": {
     "express": "3.2.6",
     "ejs": "*",
+	"angular-route": "~1.4.0",
     "karma": "^0.12.16",
     "karma-chrome-launcher": "^0.1.4",
     "karma-firefox-launcher": "^0.1.3",
