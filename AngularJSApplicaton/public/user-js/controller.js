@@ -1,44 +1,30 @@
-var app = angular.module("juniorAmazon",[]);
+var productCatControllers = angular.module("productCatControllers",[]);
 
-app.controller("AppControllers", ["$scope","$http",function($scope,$http) {
-	$scope.products = [
-	                   {
-						   "id" : 1,
-	                	   "name":"The Immortals of Meluha",
-	                	   "category" : "Books",
-	                	   "price" : "$14.50",
-						   "imgUrl" : "img/meluha.jpg",
-						   "age" : 1
-	                   },
-	                   {
-						   "id" : 2,
-	                	   "name":"The Secret of the Nagas",
-	                	   "category" : "Books",
-						   "imgUrl" : "img/The_Secret_of_the_Nagas.jpg",
-	                	   "price" : "$19.50",
-						   "age" : 1
-	                   },
-	                   {
-						   "id" : 3,
-	                	   "name":"The Oath of the vayuputras",
-	                	   "category" : "Books",
-						   "imgUrl" : "img/The_Oath_of_the_Vayuputras.jpg",
-	                	   "price" : "$12.50",
-						   "age" : 3
-	                   }
-	                   ];
+productCatControllers.controller("productListCtrl", ["$scope","$http",function($scope,$http) {
 	
-	
-/*	
-	$http.get('data/products.json').success(function(data){
-		alert("inside http");
-		console.log(data);
+	$http.get('/products/list').success(function(data){
+		//console.log(data);
 		$scope.products = data;
 	}).error(function(data){
-		alert(data);
+		alert("Error while loading products.json file");
 		console.log(data);
 	});
-*/	
+	
 	$scope.orderProp = "age";
 	
 }]);
+
+productCatControllers.controller("productDetailsCtrl",["$scope","$routeParams","$http",function($scope,$routeParams,$http){
+	$http.get('/products/' + $routeParams.productId).success(function(data){
+		console.log(data);
+		$scope.product = data;
+		$scope.mainImageUrl = data.images[0];
+	}).error(function(data){
+		alert("Error while loading products.json file");
+		console.log(data);
+	});
+
+	$scope.setImage = function(imageUrl) {
+      $scope.mainImageUrl = imageUrl;
+    };
+}])

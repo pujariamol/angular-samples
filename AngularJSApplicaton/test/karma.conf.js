@@ -6,6 +6,7 @@ module.exports = function(config){
     files : [
       'public/js/angular.min.js',
       'public/js/angular-route.js',
+	  'public/user-js/main.js',
       'public/user-js/controller.js',
       'test/unit/**/*.js'
     ],

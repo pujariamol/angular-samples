@@ -1,0 +1,14 @@
+
+<form name="myForm" novalidate>
+
+	<div class="form-group" ng-class="{ 'has-error' : myForm.{{myname}}.$invalid">
+		<span style="color:red" ng-show="myForm.{{myname}}.$dirty && myForm.{{myname}}.$invalid">
+			<span ng-show="myForm.{{myname}}.$error.required">Email is required.</span>
+			<span ng-show="myForm.{{myname}}.$error.email">{{errorMsg}}</span>
+		</span>
+
+		<input type="{{mytype}}" name="{{myname}}" id="{{myname}}" placeholder="{{myplaceholder}}"  required/>
+		<div ng-transclude></div>
+	</div>
+</form>
+

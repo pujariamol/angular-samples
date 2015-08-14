@@ -1,44 +1,50 @@
 [
-   {
+	{
+	   "id" : 1,
 	   "name":"The Immortals of Meluha",
 	   "category" : "Books",
 	   "price" : "$14.50",
+	   "imgUrl" : "img/meluha.jpg",
+	   "age" : 1
+	},
+	{
+	   "id" : 2,
+	   "name":"The Secret of the Nagas",
+	   "category" : "Books",
+	   "imgUrl" : "img/The_Secret_of_the_Nagas.jpg",
+	   "price" : "$19.50",
 	   "age" : 2
-   },
-   {
-	   "name":"The Secret of the Nagas",
-	   "category" : "Books",
-	   "price" : "$19.50",
-	   "age" : 1
-   },
-   {
+	},
+	{
+	   "id" : 3,
 	   "name":"The Oath of the vayuputras",
 	   "category" : "Books",
+	   "imgUrl" : "img/The_Oath_of_the_Vayuputras.jpg",
 	   "price" : "$12.50",
 	   "age" : 3
-   },
-   {
-	   "name":"The Secret of the Nagas",
+	},
+	{
+	   "id" : 4,
+	   "name":"Scion Of Ikshvaku",
 	   "category" : "Books",
-	   "price" : "$19.50",
-	   "age" : 1
-   },
-   {
-	   "name":"The Oath of the vayuputras",
-	   "category" : "Books",
+	   "imgUrl" : "img/scion_of_ikshvaku.jpg",
 	   "price" : "$12.50",
-	   "age" : 3
-   },
-   {
-	   "name":"The Secret of the Nagas",
+	   "age" : 4
+	},
+	{
+	   "id" : 5,
+	   "name":"The Alchemist",
 	   "category" : "Books",
-	   "price" : "$19.50",
-	   "age" : 1
-   },
-   {
-	   "name":"The Oath of the vayuputras",
-	   "category" : "Books",
+	   "imgUrl" : "img/the_alchemist.jpg",
 	   "price" : "$12.50",
-	   "age" : 3
-   }
+	   "age" : 5
+	},
+	{
+	   "id" : 6,
+	   "name":"The Monk Who Sold His Ferrari",
+	   "category" : "Books",
+	   "imgUrl" : "img/the_monk_who_sold_his_ferrari.jpg",
+	   "price" : "$12.50",
+	   "age" : 6
+	}
 ]
